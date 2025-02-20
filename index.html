@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE中国</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/image.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/image.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/image.png">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <img src="images\image.png" alt="WWE Logo" class="wwe-logo">
+            <a href="https://network.wwe.com/" target="_blank">WWE网络</a>
+            <a href="https://www.wwe.com/shows" target="_blank">节目</a>
+            <a href="https://www.wwe.com/superstars" target="_blank">明星</a>
+            <a href="https://www.wwe.com/tickets" target="_blank">门票</a>
+            <a href="https://shop.wwe.com/" target="_blank">商店</a>
+        </div>
+        <div class="nav-right">
+            <img src="images\netflixWWE_192x48--ab18e68e7aa037bceceac17f0fbe4bcd.png" alt="Network Logo" class="network-logo">
+            <a href="#" class="icon-link"><i class="fa fa-user"></i></a>
+            <a href="https://www.wwe.com/search" target="_blank" class="icon-link"><i class="fa fa-search"></i></a>
+        </div>
+    </nav>
+
+    <!-- 添加登录模态框 -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>登录</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">登录</button>
+            </form>
+            <div class="form-footer">
+                <a href="#" class="forgot-password">忘记密码?</a>
+                <a href="#" class="register">注册新账号</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加注册模态框 -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>注册新账号</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="reg-username">用户名:</label>
+                    <input type="text" id="reg-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">电子邮箱:</label>
+                    <input type="email" id="reg-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">密码:</label>
+                    <input type="password" id="reg-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">确认密码:</label>
+                    <input type="password" id="reg-confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="login-btn">注册</button>
+            </form>
+            <div class="form-footer">
+                <span>已有账号？</span>
+                <a href="#" class="switch-to-login">返回登录</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-container">
+        <div class="logo-section">
+            <img src="images\image copy 9.png" alt="WWE  Logo" class="nxt-logo">
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-download"></i></a>
+            </div>
+        </div>
+        
+        <div class="image-section">
+            <a href="index6.html" target="_blank"><img src="images\image copy 8.png" alt="Wrestling Match" class="main-image"></a>
+        </div>
+        
+        <a href="index6.html" target="_blank" class="banner-link">
+            <div class="image-section">
+                <img src="images\image copy 8.png" alt="Wrestling Match" class="main-image">
+            </div>
+            
+            <div class="content-section">
+                <div class="date">WWE REW RESULTS FOR 12/31</div>
+                <div class="title">cm朋克和赛斯"Freakin"罗林斯，在今晚面对面谈话</div>
+                <div class="action-buttons">
+                    <span class="results-btn">结果</span>
+                    <span class="highlights-btn">
+                        <i class="fa fa-play"></i> 高光时刻
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="news-grid-container">
+        <!-- 图片部分 -->
+        <div class="news-images">
+            <div class="news-grid-image">
+        <a href="index7.html" target="_blank"><img src="images\image copy 10.png" alt="OTM win" class="grid-image"></a>
+            </div>
+
+            <div class="news-grid-image">
+                <a href="index5.html" target="_blank"><img src="images\image copy 11.png" alt="William Regal" class="grid-image"></a>
+            </div>
+
+            <div class="news-grid-image">
+                <a href="index4.html" target="_blank"><img src="images\image copy 12.png" alt="Alba Fyre" class="grid-image"></a>
+            </div>
+        </div>
+
+        <!-- 文字部分 -->
+        <div class="news-titles">
+            <a href="index7.html" target="_blank" class="grid-title">德鲁麦金泰尔偷袭杰乌索</a>
+            <a href="index5.html" target="_blank" class="grid-title">女武神莱拉战胜IYO SKY</a>
+            <a href="index4.html" target="_blank" class="grid-title">达米安普莱斯&战争掠夺者对战审判日</a>
+        </div>
+    </div>
+
+    <div class="trending-section">
+        <div class="section-header">
+            <span>WWE NEWS</span>
+            <a href="#" class="more-news">More WWE News</a>
+        </div>
+        
+        <div class="trending-grid">
+            <div class="trending-item">
+                <div class="trending-image">
+                    <img src="images\image copy.png" alt="John Cena">
+                    <div class="trending-overlay">
+                        <button class="share-btn"><i class="fa fa-share-alt"></i></button>
+                    </div>
+                </div>
+                <div class="trending-content">
+                    <h3>塞纳归来,铁笼密室大赛在多伦多Rogers Centre举行</h3>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <div class="trending-image">
+                    <img src="images\image copy 2.png" alt="NXT Logo">
+                    <div class="trending-overlay">
+                        <button class="share-btn"><i class="fa fa-share-alt"></i></button>
+                    </div>
+                </div>
+                <div class="trending-content">
+                    <h3>HHH公布WWE将亮相Netflix</h3>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <div class="trending-image">
+                    <img src="images\image copy 5.png" alt="NXT Awards">
+                    <div class="trending-overlay">
+                        <button class="share-btn"><i class="fa fa-share-alt"></i></button>
+                    </div>
+                </div>
+                <div class="trending-content">
+                    <h3>摔跤狂热41，将于2025年4月19-20日举行</h3>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <div class="trending-image">
+                    <img src="images\image copy 6.png" alt="Raw on Netflix">
+                    <div class="trending-overlay">
+                        <button class="share-btn"><i class="fa fa-share-alt"></i></button>
+                    </div>
+                </div>
+                <div class="trending-content">
+                    <h3>首个两夜制夏日狂潮大赛将在新泽西州的MetLife体育场举行</h3>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="simple-showcase">
+        <div class="simple-showcase-header">
+            <img src="images\屏幕截图 2024-12-30 134154.png" alt="Smakedowm">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-download"></i></a>
+        </div>
+        <div class="simple-showcase-content">
+            <div class="simple-showcase-text">
+                <a href="index1.html" class="showcase-description">不留情面 
+                    王室决战大赛铁梯赛敲定
+                    凯文欧文斯对战科迪罗兹</a>
+            </div>
+            <div class="simple-showcase-image">
+                <a href="index1.html"><img src="images\image copy 3.png" alt="WWE Showcase Image"></a>
+            </div>
+        </div>
+    </div>
+    <div class="simple-showcase">
+        <div class="simple-showcase-header">
+            <img src="images\屏幕截图 2024-12-30 134154.png" alt="Smakedowm">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-download"></i></a>
+        </div>
+        <div class="simple-showcase-content">
+            <div class="simple-showcase-text">
+                <a href="index2.html" class="showcase-description">黑羊彻底摧毁奥斯汀理论</a>
+            </div>
+            <div class="simple-showcase-image">
+                <a href="index2.html"><img src="images\image copy 4.png" alt="WWE Showcase Image"></a>
+            </div>
+        </div>
+    </div>
+    <div class="simple-showcase1">
+        <div class="simple-showcase-header1">
+            <img src="images\image copy 7.png" alt="raw11">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-download"></i></a>
+        </div>
+        <div class="simple-showcase-content1">
+            <div class="simple-showcase-text1">
+                <a href="index3.html" class="showcase-description1">NEW DAY SUCK! 全场嘘声，科菲母亲愤然离场</a>
+            </div>
+            <div class="simple-showcase-image1">
+                <a href="index3.html"><img src="images\078_RAW_12232024RF_19417--28f8d58979bfec8a56e0be5511040221.jpg" alt="WWE Showcase Image"></a>
+            </div>
+        </div>
+    </div>
+    <div class="simple-showcase1">
+        <div class="simple-showcase-header1">
+            <img src="images\image copy 7.png" alt="raw11">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-download"></i></a>
+        </div>
+        <div class="simple-showcase-content1">
+            <div class="simple-showcase-text1">
+                <a href="index8.html" class="showcase-description1">索罗带队暴打杰乌索</a>
+            </div>
+            <div class="simple-showcase-image1">
+                <a href="index8.html"><img src="images\20241223_RAW_FC--898fef29f4892c4fa730ca42918c4ae8 (1) copy.jpg" alt="WWE Showcase Image"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer-nav">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>公司信息</h3>
+                <ul>
+                    <li><a href="https://corporate.wwe.com/" target="_blank">关于公司</a></li>
+                    <li><a href="https://corporate.wwe.com/careers" target="_blank">招贤纳士</a></li>
+                    <li><a href="https://corporate.wwe.com/impact" target="_blank">社会影响</a></li>
+                    <li><a href="https://corporate.wwe.com/contact" target="_blank">联系我们</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>WWE官网</h3>
+                <ul>
+                    <li><a href="https://www.wwe.com/news" target="_blank">WWE新闻</a></li>
+                    <li><a href="https://www.wwe.com/videos" target="_blank">WWE视频</a></li>
+                    <li><a href="https://www.wwe.com/photos" target="_blank">WWE图片</a></li>
+                    <li><a href="https://www.wwe.com/worldwide" target="_blank">WWE全球</a></li>
+                    <li><a href="https://onlocationexp.com/wwe?utm_source=wwe.com&utm_medium=referral&utm_campaign=wwe-footer" target="_blank">优先通行证</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>关于</h3>
+                <ul>
+                    <li><a href="https://www.wwe.com/page/privacy-policy " target="_blank">隐私政策</a></li>
+                    <li><a href="https://www.wwe.com/page/copyright" target="_blank">版权信息</a></li>
+                    <li><a href="https://www.wwe.com/page/terms-of-use" target="_blank">使用条款</a></li>
+                    <li><a href="https://www.wwe.com/page/cookie-policy" target="_blank">Cookie设置</a></li>
+                    <li><a href="https://www.wwe.com/page/personal-information-protection" target="_blank">个人信息保护</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>帮助</h3>
+                <ul>
+                    <li><a href="https://www.wwe.com/page/security-policy" target="_blank">安全中心</a></li>
+                    <li><a href="https://www.wwe.com/page/help-center" target="_blank">帮助中心</a></li>
+                    <li><a href="https://www.wwe.com/page/cookie-policy" target="_blank">Cookie政策</a></li>
+                    <li><a href="https://www.wwe.com/page/subtitles" target="_blank">字幕设置</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>全球站点</h3>
+                <ul>
+                    <li><a href="https://arabic.wwe.com/" target="_blank">阿拉伯语</a></li>
+                    <li><a href="#">中文</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-logo">
+                <img src="images\屏幕截图 2024-12-31 083105.png" alt="WWE标志">
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

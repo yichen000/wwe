@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频播放页面</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/image.png" type="image/png">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <img src="images\image.png" alt="WWE Logo" class="wwe-logo">
+            <a href="https://network.wwe.com/" target="_blank">WWE网络</a>
+            <a href="https://www.wwe.com/shows" target="_blank">节目</a>
+            <a href="https://www.wwe.com/superstars" target="_blank">明星</a>
+            <a href="https://www.wwe.com/tickets" target="_blank">门票</a>
+            <a href="https://shop.wwe.com/" target="_blank">商店</a>
+        </div>
+        <div class="nav-right">
+            <img src="images\屏幕截图 2024-12-27 102221.png" alt="Network Logo" class="network-logo">
+            <a href="#" class="icon-link"><i class="fa fa-user"></i></a>
+            <a href="https://www.wwe.com/search" target="_blank" class="icon-link"><i class="fa fa-search"></i></a>
+        </div>
+    </nav>
+        <div class="nav-right">
+            <img src="images\屏幕截图 2024-12-27 102221.png" alt="Network Logo" class="network-logo">
+            <a href="#" class="icon-link"><i class="fa fa-user"></i></a>
+            <a href="#" class="icon-link"><i class="fa fa-search"></i></a>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <div class="main-content">
+        <div class="video-container">
+            <div class="main-video">
+                <video id="main-player" controls>
+                        <source src="images\27623755612-1-192.mp4" type="video/mp4">
+                </video>
+                <div class="video-info">
+                    <h1 class="video-title">达米安普莱斯&战争掠夺者对战审判日</h1>
+                    <div class="video-stats">
+   
+                        <span>发布时间：2024-01-02</span>
+                    </div>
+                </div>
+            </div>
+            <div class="comments-section">
+                <h2 class="comments-title">评论区</h2>
+                
+                <!-- 评论输入框 -->
+                <div class="comment-form">
+                    <img src="avatar.png" alt="用户头像" class="user-avatar">
+                    <div class="input-container">
+                        <textarea placeholder="写下你的评论..." class="comment-input"></textarea>
+                        <button class="submit-comment">发表评论</button>
+                    </div>
+                </div>
+
+                <!-- 评论列表 -->
+                <div class="comments-list">
+                    <!-- 示例评论 -->
+                    <div class="comment-item">
+                        <img src="user1.png" alt="用户头像" class="user-avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="username">用户名</span>
+                                <span class="comment-time">1小时前</span>
+                            </div>
+                            <p class="comment-text">这是一条示例评论内容。</p>
+                            <div class="comment-actions">
+                                <button class="action-btn like-btn">
+                                    <span class="like-count">8</span> 点赞
+                                </button>
+                                <button class="action-btn reply-btn">回复</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
